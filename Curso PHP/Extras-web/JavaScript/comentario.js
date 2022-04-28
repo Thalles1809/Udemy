@@ -6,3 +6,5 @@ console.log("Linha 1")
  * Múltiplas linhas
  */
 console.log("Linha 2")
+
+console.log("Linha 3")
