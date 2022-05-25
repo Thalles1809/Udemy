@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Nivs</title>
+</head>
+
+<body>
+
+    <form action="">
+        <input type="text" id="name" name="name">
+        <input type="button" onclick="enviarInput()" value="Enviar">
+    </form>
+
+    <script>
+        let opt1 = {
+            "100": "2000",
+            "1000": "10000",
+            "10000": "42000"
+        };
+        let opt2 = {
+            "100": "1500",
+            "1000": "12000",
+            "10000": "47000"
+        };
+        let opt3 = {
+            "100": "2500",
+            "1000": "9500",
+            "10000": "40000"
+        };
+        
+        function enviarInput() {
+            let input = document.querySelector("#name");
+            let texto = input.value;
+            alert(texto);
+        }
+
+        function copy(o) {
+            let copy = Object.create(Object.getPrototypeOf(o));
+            let propNames = Object.getOwnPropertyNames(o);
+
+            propNames.forEach(function (name) {
+                let desc = Object.getOwnPropertyDescriptor(o, name);
+                Object.defineProperty(copy, name, desc);
+            });
+
+            return copy;
+        }
+
+        let legal = copy(opt1)
+        console.log(legal)
+
+    </script>
+
+</body>
+
+</html>
