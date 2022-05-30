@@ -18,8 +18,8 @@ console.log(n, i)
 const {sobrenome, bemHumorada = true} = pessoa
 console.log(sobrenome, bemHumorada)
 
-const {endereco: { logradouro, numero, cep}} = pessoa
+/**const {endereco: { logradouro, numero, cep}} = pessoa
 console.log(logradouro, numero, cep)
 
 const { conta: {agencia, numero}} = pessoa
-console.log(agencia, numero)
+console.log(agencia, numero)**/
