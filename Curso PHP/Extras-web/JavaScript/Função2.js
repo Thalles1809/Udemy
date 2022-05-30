@@ -23,3 +23,5 @@ console.log(subtracao(5, 3))
 const imprimir2 = a => console.log(a)
 
 imprimir2('Legal!!!')
+
+1 == 1 && console.log('foda-se')
